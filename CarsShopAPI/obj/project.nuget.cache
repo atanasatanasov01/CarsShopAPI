@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "sCOO/NedBd8Yw5nm68xjqG+quUKksLC10f0VAa2SdXHb9ulA7/Q1mS0VIRNs3VFjAlX5pITE9+y9zcpAsblqdA==",
+  "dgSpecHash": "lwhe/QZEZHQEEAmHtr5C/V3QOaYjBlVckabDX23I4J9F1Vvnt21ycsbKAkUmfCh7HUIB3LzSMbZiQAHpULcvcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nasko\\Desktop\\RestAPI\\CarsShopAPI\\CarsShopAPI.csproj",
+  "projectFilePath": "D:\\CarsShopAPI\\CarsShopAPI\\CarsShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nasko\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Nasko\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Nasko\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Nasko\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Nasko\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\Nasko\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\Nasko\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\Nasko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
