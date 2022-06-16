@@ -26,9 +26,9 @@ namespace RestAPI.Controllers
 
         // GET request /items/{id}
         [HttpGet("{id}")]
-        public Item GetItem(Guid id)
+        public Item GetItem(int id)
         {
-            var item = repository.GetItem();
+            var item = repository.GetItem(id);
             return item;
         }
     }

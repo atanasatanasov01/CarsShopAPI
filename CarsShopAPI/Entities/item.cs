@@ -5,7 +5,7 @@ namespace RestAPI.Entities
     public record Item
     {
 
-        public Guid Id { get; init; }
+        public int Id { get; init; }
         public string CarMake { get; init; }
 
         public string CarModel { get; init; }
