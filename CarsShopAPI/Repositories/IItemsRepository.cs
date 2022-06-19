@@ -11,5 +11,10 @@ namespace RestAPI.Repositories
         Item GetItem(int id);
 
         IEnumerable<Item> GetItems();
+        void CreateItem(Item item);
+
+        void UpdateItem(Item item);
+
+        void DeleteItem(int id);
     }
 }
