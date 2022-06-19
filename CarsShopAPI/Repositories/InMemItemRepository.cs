@@ -6,7 +6,10 @@ using RestAPI.Controllers;
 
 namespace RestAPI.Repositories
 {
-    public class InMemItemRepository 
+    
+   
+
+    public class InMemItemRepository : IItemsRepository
     {
         private readonly List<Item> items = new()
         {
