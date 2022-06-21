@@ -8,7 +8,7 @@ namespace RestAPI.Settings
 
         public string connectionString {get
         {
-            return $"mongodb://{Host}:{Port}";
+            return "mongodb://docker:mongopw@localhost:49153";
         }
         }
     }
