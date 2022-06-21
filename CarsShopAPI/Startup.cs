@@ -12,6 +12,13 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using RestAPI.Repositories;
+using MongoDB.Driver;
+using RestAPI.Settings;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+
+
 
 namespace CarsShopAPI
 {
@@ -27,8 +34,15 @@ namespace CarsShopAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
             
-            services.AddSingleton<IItemsRepository, InMemItemRepository>();
+            services.AddSingleton<IMongoClient>(serviceProvider => {
+                var settings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+                return new MongoClient(settings.connectionString);
+            });
+            
+            services.AddSingleton<IItemsRepository, MongoDBItemsRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
