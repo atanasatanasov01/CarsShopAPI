@@ -20,6 +20,7 @@ using MongoDB.Bson.Serialization.Serializers;
 
 
 
+
 namespace CarsShopAPI
 {
     public class Startup
@@ -44,7 +45,9 @@ namespace CarsShopAPI
             
             services.AddSingleton<IItemsRepository, MongoDBItemsRepository>();
 
-            services.AddControllers();
+            services.AddControllers(options => {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CarsShopAPI", Version = "v1" });

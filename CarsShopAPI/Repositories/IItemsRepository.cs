@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using RestAPI.Entities;
 
 
@@ -8,13 +9,15 @@ namespace RestAPI.Repositories
 {
      public interface IItemsRepository
     {
-        Item GetItem(int id);
+        
+        Task<Item> GetItemAsync(int id);
 
-        IEnumerable<Item> GetItems();
-        void CreateItem(Item item);
+        Task<IEnumerable<Item>> GetItemsAsync();
 
-        void UpdateItem(Item item);
+        Task CreateItemAsync(Item item);
 
-        void DeleteItem(int id);
+        Task UpdateItemAsync(Item item);
+
+        Task DeleteItemAsync(int id);
     }
 }
